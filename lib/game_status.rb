@@ -25,5 +25,5 @@ def won?(board)
     end
   end
   return results
-  
+
 end

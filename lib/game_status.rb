@@ -25,5 +25,10 @@ def won?(board)
     end
   end
   return results
+end
 
+def full?(board)
+  board.all? do |spot|
+    spot == "X" || spot == "O"
+  end
 end

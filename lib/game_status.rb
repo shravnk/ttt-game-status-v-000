@@ -22,8 +22,6 @@ def won?(board)
       return test_win
     elsif test_win.all?{|tester| board[tester] == "O"}
       return test_win
-    else
-      return nil
     end
 
   end

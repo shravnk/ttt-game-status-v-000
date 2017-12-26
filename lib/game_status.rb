@@ -18,9 +18,9 @@ def won?(board)
   WIN_COMBINATIONS.each do |winner|
 
     test_win = winner
-    if test_win.all?{ |tester| board[tester] == "X"}
+    if test_win.all?{|tester| board[tester] == "X"}
       return test_win
-    elsif test_win.all?{ |tester| board[tester] == "O"}
+    elsif test_win.all?{|tester| board[tester] == "O"}
       return test_win
     else
       return nil

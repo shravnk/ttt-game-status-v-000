@@ -24,7 +24,7 @@ def won?(board)
       return test_win
     else
       return nil
-    end   
-    
+    end
+
   end
 end

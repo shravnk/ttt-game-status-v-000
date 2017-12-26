@@ -19,7 +19,7 @@ def won?(board)
 
   test_win = winner
   test_win.all? do |tester|
-    tester == "X"
+    board[tester] == "X"
   end
   end
 end

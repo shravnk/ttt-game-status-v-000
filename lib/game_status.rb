@@ -15,14 +15,15 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  results = nil
   WIN_COMBINATIONS.each do |winner|
-
     test_win = winner
     if test_win.all?{|tester| board[tester] == "X"}
-      return test_win
+      results = test_win
     elsif test_win.all?{|tester| board[tester] == "O"}
-      return test_win
+      results = test_win
     end
-
   end
+  return results
+  
 end

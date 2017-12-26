@@ -43,5 +43,9 @@ end
 
 def winner(board)
   winning_board = won?(board)
-  return board[winning_board[0]]
+  if winning_board.is_a?
+    return board[winning_board[0]]
+  else 
+    return nil
+  end
 end

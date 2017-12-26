@@ -15,11 +15,16 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.select do |winner|
+  WIN_COMBINATIONS.each do |winner|
 
-  test_win = winner
-  test_win.all? do |tester|
-    board[tester] == "X"
-  end
+    test_win = winner
+    if test_win.all? do{ |tester| board[tester] == "X"}
+      return test_win
+    elsif test_win.all? do{ |tester| board[tester] == "O"}
+      return test_win
+    else
+      return nil
+    end   
+    
   end
 end
